@@ -52,11 +52,32 @@ void format_argv(char* argv[],Rc_filter_data* data){
 int main(int argc,char* argv[]){
 	// Arguments handling condition.
 
-	char help[500]="\33[34mRc low Pass filter: \33[33m(let only the low frequency (like audio vs Radio frequence) when R is in series and C in parallel to the power supply .\n"
+	char help[2000]="\33[34mRc low Pass filter: \33[33m(let only the low frequency (like audio vs Radio frequence) when R is in series and C in parallel to the power supply .\n"
                        "\33[34mRc hight Pass filter: \33[33m(let only the High frequency passing) when R is in parallel and C in series.\n"
                        "\33[34mHelp:\33[33m\n"
                        "               fast, ( 3 cli arguments forever ):  1 Resistance, 2 Capacitance, 3 Cut Off Frequency\n"
-                       "             --- at least 2 arguments non Null must be provided the last third unknow is feed at 0. ---\33[0m\n"; 
+                       "             --- at least 2 arguments non Null must be provided the last third unknow is feed at 0. ---\33[0m\n"
+"                      \33[34mRC Low pass circuit:\33[0m          \n "
+"                       --------   \33[33mR\33[0m   -----|---------\33[33mO\33[0m\n "
+"                                           |          \n "                 
+"                                           |          \n "
+"                                         | \33[33mC\33[0m |        \n "
+"                                           |          \n "
+"                                           |          \n "
+"                                         _____        \n "
+"                                          \33[33mGND\33[0m         \n "
+"                                                      \n "
+"                                                      \n "
+"                      \33[34mRC High pass circuit:\33[0m          \n "
+"                                                      \n "
+"                       -------   \33[33mC\33[0m   ------|---------\33[33mO\33[0m\n "
+"                                           |          \n "
+"                                           |          \n "
+"                                         | \33[33mR\33[0m |        \n "
+"                                           |          \n "
+"                                           |          \n "
+"                                         _____        \n "
+"                                          \33[33mGND\33[0m         \n ";
 	if(argc==1){
 		printf("%s\n",help);
 		return EXIT_SUCCESS;
