@@ -66,6 +66,6 @@ int main(int argc,char* argv[]){
         RcLowPass_filter_data RcLowData = {.init=1};
         format_argv(argv,&RcLowData);
 	Rc_LowpassFilter(RcLowData.R,RcLowData.C,RcLowData.Fc,&RcLowData);
-	printf("\33[3J\33[34mRc Low Pass filters:\33[0m\n     \33[3J \33[34mFrequency \33[0mabove \33[33m%6.3Le Hz\33[0m filtred with \33[34mR:\33[33m%6.3Le Ohm(s) \33[34mC:\33[33m%6.3Le Farad(s) \33[0m\n",RcLowData.Fc,RcLowData.R,RcLowData.C); 
+	printf("\33[3J\33[34mRc Low Pass filters:\33[0m\n     \33[3J \33[34mFrequency \33[0mabove \33[33m%6.3Le Hz\33[0m are filtred with \33[34mR:\33[33m%6.3Le Ohm(s) \33[34mC:\33[33m%6.3Le Farad(s) \33[0m\n",RcLowData.Fc,RcLowData.R,RcLowData.C); 
 return EXIT_SUCCESS;
 }
