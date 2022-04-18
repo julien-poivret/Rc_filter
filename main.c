@@ -53,7 +53,7 @@ void format_argv(char* argv[],RcLowPass_filter_data* data){
 int main(int argc,char* argv[]){
 	// Arguments handling condition.
 
-	char help[500]="\33[34mRc low Pass filter (let only the low frequency (like audio vs Rf).\33[33m\n"
+	char help[500]="\33[34mRc low Pass filter (let only the low frequency (like audio vs Radio frequence).\33[33m\n"
                        "     fast, ( 3 cli arguments forever ):  1 Resistance, 2 Capacitance, 3 Cut Off Frequency\n"
                        "        --- at least 2 arguments non Null must be provided the third unknow is 0. ---\33[0m\n"; 
 	if(argc==1){
