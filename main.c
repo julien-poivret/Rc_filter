@@ -58,6 +58,7 @@ int main(int argc,char* argv[]){
                        "               fast, ( 3 cli arguments forever ):  1 Resistance, 2 Capacitance, 3 Cut Off Frequency\n"
                        "             --- at least 2 arguments non Null must be provided the last third unknow is feed at 0. ---\33[0m\n"
 "                      \33[34mRC Low pass circuit:\33[0m          \n "
+"                                                      \n "
 "                       --------   \33[33mR\33[0m   -----|---------\33[33mO\33[0m\n "
 "                                           |          \n "                 
 "                                           |          \n "
